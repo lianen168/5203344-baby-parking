@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5203344.baby | 我爱你生生世世宝贝</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@400;700;900&family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Serif SC', serif;
+            background: linear-gradient(135deg, #fff0f7 0%, #ffe6f2 30%, #ffd9ec 100%);
+            color: #a52a52;
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 0 30px;
+        }
+        
+        .logo {
+            font-family: 'ZCOOL QingKe HuangYou', cursive;
+            font-size: 4rem;
+            color: #ff0080;
+            text-shadow: 4px 4px 0 #ff80bf, 8px 8px 0 rgba(255, 0, 128, 0.2);
+            margin-bottom: 15px;
+            letter-spacing: 3px;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes glow {
+            from {
+                text-shadow: 4px 4px 0 #ff80bf, 8px 8px 0 rgba(255, 0, 128, 0.2);
+            }
+            to {
+                text-shadow: 4px 4px 0 #ff80bf, 8px 8px 0 rgba(255, 0, 128, 0.4), 0 0 20px #ff0080;
+            }
+        }
+        
+        .subtitle {
+            font-size: 2.2rem;
+            color: #db30a6;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .subtitle::after, .subtitle::before {
+            content: "♥";
+            margin: 0 20px;
+            color: #ff3399;
+            font-size: 2.5rem;
+            vertical-align: middle;
+        }
+        
+        .domain-breakdown {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 30px 0;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        
+        .domain-part {
+            padding: 10px 20px;
+            border-radius: 15px;
+            margin: 5px;
+        }
+        
+        .part-520 {
+            background: linear-gradient(45deg, #ff0080, #ff3399);
+            color: white;
+            box-shadow: 0 5px 15px rgba(255, 0, 128, 0.4);
+        }
+        
+        .part-3344 {
+            background: linear-gradient(45deg, #ff3399, #ff66b3);
+            color: white;
+            box-shadow: 0 5px 15px rgba(255, 51, 153, 0.4);
+        }
+        
+        .part-baby {
+            background: linear-gradient(45deg, #ff66b3, #ff99cc);
+            color: white;
+            box-shadow: 0 5px 15px rgba(255, 102, 179, 0.4);
+        }
+        
+        .plus-sign {
+            font-size: 2.5rem;
+            color: #ff0080;
+        }
+        
+        .meaning-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin: 50px 0;
+        }
+        
+        .meaning-box {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 35px;
+            width: 100%;
+            max-width: 350px;
+            box-shadow: 0 10px 30px rgba(219, 48, 166, 0.15);
+            border: 3px solid #ff80bf;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        
+        .meaning-box:hover {
+            transform: translateY(-10px);
+        }
+        
+        .meaning-box::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 8px;
+            background: linear-gradient(90deg, #ff0080, #ff3399, #ff66b3, #ff99cc);
+        }
+        
+        .meaning-title {
+            font-size: 1.8rem;
+            color: #db30a6;
+            margin-bottom: 20px;
+            text-align: center;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #ffb3d9;
+            font-weight: 900;
+        }
+        
+        .meaning-text {
+            font-size: 1.3rem;
+            line-height: 1.8;
+            text-align: center;
+            color: #993366;
+        }
+        
+        .highlight {
+            color: #ff0080;
+            font-weight: bold;
+            font-size: 1.4rem;
+            text-shadow: 1px 1px 0 #ffb3d9;
+        }
+        
+        .price-section {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin: 40px auto;
+            border: 3px solid #ff3399;
+            text-align: center;
+            max-width: 600px;
+            box-shadow: 0 10px 25px rgba(255, 51, 153, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .price-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background: linear-gradient(90deg, #ff0080, #ff3399, #ff66b3);
+        }
+        
+        .price-title {
+            font-size: 2rem;
+            color: #cc0066;
+            margin-bottom: 15px;
+        }
+        
+        .price {
+            font-size: 3.5rem;
+            color: #ff0080;
+            font-weight: 900;
+            text-shadow: 3px 3px 0 #ffb3d9;
+            margin: 10px 0;
+        }
+        
+        .installment {
+            font-size: 1.4rem;
+            color: #db30a6;
+            margin-top: 10px;
+            background: #fff0f7;
+            padding: 10px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        
+        .contact-section {
+            text-align: center;
+            margin: 50px 0 30px;
+            padding: 30px;
+            background: linear-gradient(135deg, rgba(255, 240, 247, 0.9), rgba(255, 230, 242, 0.9));
+            border-radius: 20px;
+            border: 2px dashed #ff66b3;
+        }
+        
+        .contact-title {
+            font-size: 1.8rem;
+            color: #cc0066;
+            margin-bottom: 20px;
+        }
+        
+        .email {
+            font-size: 1.6rem;
+            color: #a52a52;
+            background: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            display: inline-block;
+            margin-top: 15px;
+            border: 3px solid #ff3399;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            box-shadow: 0 5px 15px rgba(255, 51, 153, 0.3);
+        }
+        
+        .email:hover {
+            background: #ff0080;
+            color: white;
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 10px 25px rgba(255, 0, 128, 0.5);
+        }
+        
+        .chinese-poetry {
+            font-size: 1.2rem;
+            text-align: center;
+            margin: 40px 0;
+            line-height: 2;
+            color: #993366;
+            font-style: italic;
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            border-left: 8px solid #ff0080;
+            border-right: 8px solid #ff0080;
+        }
+        
+        .floating-hearts {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+            overflow: hidden;
+        }
+        
+        .heart {
+            position: absolute;
+            color: rgba(255, 0, 128, 0.25);
+            font-size: 24px;
+            animation: float 20s infinite linear;
+        }
+        
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) rotate(0deg) scale(0.5);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.8;
+            }
+            90% {
+                opacity: 0.8;
+            }
+            100% {
+                transform: translateY(-100px) rotate(720deg) scale(1.5);
+                opacity: 0;
+            }
+        }
+        
+        .love-symbols {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin: 30px 0;
+            font-size: 3rem;
+            color: #ff0080;
+            flex-wrap: wrap;
+        }
+        
+        .symbol {
+            animation: symbolPulse 3s infinite;
+            animation-delay: calc(var(--i) * 0.5s);
+        }
+        
+        @keyframes symbolPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            color: #cc0066;
+            font-size: 1rem;
+            margin-top: 30px;
+            border-top: 2px solid #ffb3d9;
+        }
+        
+        .domain-stats {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            max-width: 500px;
+            margin: 30px auto;
+            box-shadow: 0 5px 15px rgba(255, 0, 128, 0.1);
+        }
+        
+        .stats-title {
+            font-size: 1.5rem;
+            color: #ff0080;
+            margin-bottom: 15px;
+        }
+        
+        .stats-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px dashed #ffb3d9;
+        }
+        
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 2.8rem;
+            }
+            
+            .subtitle {
+                font-size: 1.6rem;
+            }
+            
+            .domain-breakdown {
+                font-size: 1.4rem;
+            }
+            
+            .meaning-box {
+                padding: 25px;
+            }
+            
+            .price {
+                font-size: 2.8rem;
+            }
+            
+            .email {
+                font-size: 1.2rem;
+                padding: 12px 20px;
+            }
+            
+            .love-symbols {
+                font-size: 2.2rem;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="floating-hearts" id="floating-hearts"></div>
+    
+    <div class="container">
+        <header>
+            <h1 class="logo">5203344.baby</h1>
+            <h2 class="subtitle">我爱你 · 生生世世 · 宝贝</h2>
+            
+            <div class="domain-breakdown">
+                <div class="domain-part part-520">520</div>
+                <div class="plus-sign">+</div>
+                <div class="domain-part part-3344">3344</div>
+                <div class="plus-sign">+</div>
+                <div class="domain-part part-baby">.baby</div>
+            </div>
+            
+            <div class="love-symbols">
+                <div class="symbol" style="--i:0">爱</div>
+                <div class="symbol" style="--i:1">❤</div>
+                <div class="symbol" style="--i:2">永</div>
+                <div class="symbol" style="--i:3">恒</div>
+                <div class="symbol" style="--i:4">恋</div>
+                <div class="symbol" style="--i:5">💑</div>
+                <div class="symbol" style="--i:6">缘</div>
+            </div>
+        </header>
+        
+        <div class="chinese-poetry">
+            <p>"山无陵，江水为竭，冬雷震震，夏雨雪，天地合，乃敢与君绝。" ——《汉乐府·上邪》</p>
+            <p>最深沉的爱意，是跨越时间与空间的永恒承诺。5203344.baby 代表今生来世永不改变的爱恋。</p>
+        </div>
+        
+        <div class="meaning-container">
+            <div class="meaning-box">
+                <h3 class="meaning-title">520 的寓意</h3>
+                <p class="meaning-text">
+                    <span class="highlight">520</span> 在中文网络文化中谐音"我爱你"，<br><br>
+                    是情侣间表达爱意的数字密码。<br><br>
+                    每年5月20日已成为中国的网络情人节，<br>
+                    是表达爱意的特殊日子。
+                </p>
+            </div>
+            
+            <div class="meaning-box">
+                <h3 class="meaning-title">3344 的寓意</h3>
+                <p class="meaning-text">
+                    <span class="highlight">3344</span> 谐音"生生世世"，<br><br>
+                    源自中国古典爱情观，<br>
+                    代表永恒、不朽的爱情承诺。<br><br>
+                    超越今生，约定来世，<br>
+                    是最浪漫的永恒誓言。
+                </p>
+            </div>
+            
+            <div class="meaning-box">
+                <h3 class="meaning-title">.baby 的寓意</h3>
+                <p class="meaning-text">
+                    <span class="highlight">.baby</span> 是爱侣间的亲密称呼，<br><br>
+                    代表宠爱、呵护与唯一。<br><br>
+                    将所爱之人称为"宝贝"，<br>
+                    是中文里最甜蜜的爱称之一，<br>
+                    蕴含无限柔情。
+                </p>
+            </div>
+        </div>
+        
+        <div class="domain-stats">
+            <h3 class="stats-title">域名特性</h3>
+            <div class="stats-item">
+                <span>字符长度：</span>
+                <span>7个数字 + 4个字母 = 11个字符</span>
+            </div>
+            <div class="stats-item">
+                <span>寓意组合：</span>
+                <span>520(我爱你) + 3344(生生世世) + .baby(宝贝)</span>
+            </div>
+            <div class="stats-item">
+                <span>适合用途：</span>
+                <span>爱情纪念、求婚网站、情侣品牌、婚礼策划</span>
+            </div>
+            <div class="stats-item">
+                <span>文化理解：</span>
+                <span>仅中国人能完全领会其深意</span>
+            </div>
+        </div>
+        
+        <div class="price-section">
+            <h3 class="price-title">域名售价</h3>
+            <div class="price">$5200 美金</div>
+            <p class="installment">支持分5期支付，每期仅需 $1040</p>
+            <p style="margin-top: 20px; color: #993366; font-size: 1.1rem;">
+                价格包含数字"520"(我爱你)的美好寓意，为爱情投资，永恒值得。
+            </p>
+        </div>
+        
+        <div class="contact-section">
+            <h3 class="contact-title">拥有这份永恒的爱意</h3>
+            <p style="font-size: 1.2rem; color: #993366; margin-bottom: 20px;">
+                此域名专为珍视永恒爱情的人士准备，是求婚、纪念日或爱情品牌的完美选择。
+            </p>
+            <a href="mailto:joshua369x@gmail.com" class="email">
+                <i class="fas fa-heart"></i> 联系邮箱：joshua369x@gmail.com <i class="fas fa-heart"></i>
+            </a>
+            <p style="margin-top: 25px; color: #cc0066; font-size: 1.1rem;">
+                请通过上方邮箱联系咨询购买事宜，期待为您传递这份永恒爱意。
+            </p>
+        </div>
+        
+        <div class="chinese-poetry">
+            <p>"愿得一人心，白首不相离。" —— 卓文君《白头吟》</p>
+            <p>5203344.baby 不仅仅是一个域名，它是永恒爱情的数字化承诺。</p>
+        </div>
+        
+        <footer>
+            <p>5203344.baby 爱情专属域名 | 此页面仅面向理解中文爱情文化的受众</p>
+            <p>© 2023 我爱你生生世世宝贝 版权所有 | 永恒的爱，值得永恒的投资</p>
+        </footer>
+    </div>
+
+    <script>
+        // 创建浮动爱心背景
+        function createHearts() {
+            const container = document.getElementById('floating-hearts');
+            const heartCount = 60;
+            
+            for (let i = 0; i < heartCount; i++) {
+                const heart = document.createElement('div');
+                heart.classList.add('heart');
+                heart.innerHTML = Math.random() > 0.5 ? '♥' : '❤';
+                heart.style.left = `${Math.random() * 100}%`;
+                heart.style.animationDuration = `${15 + Math.random() * 25}s`;
+                heart.style.animationDelay = `${Math.random() * 10}s`;
+                heart.style.fontSize = `${20 + Math.random() * 30}px`;
+                
+                // 随机粉色系颜色
+                const pinkShades = [
+                    'rgba(255, 0, 128, 0.25)',
+                    'rgba(255, 51, 153, 0.25)',
+                    'rgba(255, 102, 179, 0.25)',
+                    'rgba(255, 153, 204, 0.25)',
+                    'rgba(255, 204, 229, 0.25)'
+                ];
+                heart.style.color = pinkShades[Math.floor(Math.random() * pinkShades.length)];
+                
+                container.appendChild(heart);
+            }
+        }
+        
+        // 页面加载完成后执行
+        window.addEventListener('DOMContentLoaded', (event) => {
+            createHearts();
+            
+            // 为价格部分添加点击效果
+            const priceSection = document.querySelector('.price-section');
+            priceSection.addEventListener('click', function() {
+                this.style.transform = 'scale(0.98)';
+                setTimeout(() => {
+                    this.style.transform = 'scale(1)';
+                }, 150);
+            });
+            
+            // 为邮箱链接添加悬停效果
+            const emailLink = document.querySelector('.email');
+            emailLink.addEventListener('mouseenter', function() {
+                this.innerHTML = '<i class="fas fa-heartbeat"></i> joshua369x@gmail.com <i class="fas fa-heartbeat"></i>';
+            });
+            
+            emailLink.addEventListener('mouseleave', function() {
+                this.innerHTML = '<i class="fas fa-heart"></i> 联系邮箱：joshua369x@gmail.com <i class="fas fa-heart"></i>';
+            });
+            
+            // 为含义框添加随机颜色边框动画
+            const meaningBoxes = document.querySelectorAll('.meaning-box');
+            meaningBoxes.forEach((box, index) => {
+                box.addEventListener('mouseenter', function() {
+                    const colors = ['#ff0080', '#ff3399', '#ff66b3'];
+                    this.style.borderColor = colors[index % colors.length];
+                });
+                
+                box.addEventListener('mouseleave', function() {
+                    this.style.borderColor = '#ff80bf';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
